@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet"  href="fontawesome/fontawesome/css/all.css">
+	<style>
+	body
+	{
+		background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvvFkvmSfL676uxEYwDd2kQfAmXkf-cpS6w&usqp=CAU');
+        background-size:cover;
+	}
+	.main
+	{
+		width:200px;
+		margin:50px auto;
+		padding:70px;
+		background-image:linear-gradient(45deg,orange,blue,green);
+		border-radius:20px;
+		box-shadow:0 0 20px red;
+		text-align:center;
+  	}
+  	::placeholder
+  	{
+  		color:white;
+  	}
+	.formgroup
+	{
+		margin:20px;
+	}
+	.formgroup input[type='text'],.formgroup input[type='password'],select
+	{
+		border:none;
+		width:170px;
+		outline:none;
+		color:white;
+		background:none;
+		font-size:15px;
+		width:170px;
+		border-bottom:2px solid white;
+	}
+	.formgroup select
+	{
+		width:173px;
+	}
+
+	.formgroup input[type='submit']
+	{
+		width:173px;
+		margin-top:5px;
+		border:none;
+		outline:none;
+		border-radius:5px;
+		padding:10px;
+		background:linear-gradient(45deg,orange,green,red);
+		color:white;
+	}
+	input[type='submit']:hover
+	{
+		box-shadow: 0 0 20px red;
+	}
+    #icon
+	{
+		margin-top:-130px;
+	}
+	.fa
+	{
+		color:white;
+		background-color:blue;
+		font-size:70px;
+		border-radius:50%;
+		border:10px solid blue;
+		box-shadow:0 0 10px blue;
+	}
+	</style>
+</head>
+<body>
+<div class="main">
+	<div id="icon">
+			<span class="fa fa-user-circle"></span>
+		</div>
+	<form>
+		<div>
+			<div  class="formgroup"><input  type="text" placeholder="Enter Username"></div>
+			<div  class="formgroup"><input  type="text" placeholder="Enter Email"></div>
+			<div  class="formgroup"><input  type="password" placeholder="Enter password"></div>
+			<div  class="formgroup"><input  type="password" placeholder="Confirm password"></div>
+			<div  class="formgroup">
+				<select >
+				<option>select designation</option>
+				<option>team leader</option>
+				<option>sr.manager</option>
+				<option>project manager</option>
+			</select>
+		    </div>
+			<div  class="formgroup">
+				<input type="submit" name="">
+			</div>
+		      
+	</div>
+	</form>
+</div>
+</body>
+</html>

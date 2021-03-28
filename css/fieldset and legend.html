@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fieldsetand legend</title>
+	<style>
+		div
+		{
+			width:600px;
+			margin:200px 200px;
+		}
+		fieldset
+        {
+           border:2px solid red;
+         }
+         fieldset legend
+         {
+         	border:2px solid green;
+         	padding:10px;
+         	border-radius:0px 10px 0px 10px;
+         	box-shadow: 0 0 10px blue;
+         }
+         table
+         {
+         	color:green;
+         }
+         input
+         {
+         	color:red;
+         }
+         #a
+         {
+         	color:blue;
+         }
+	</style>
+</head>
+<body>
+<div>
+	<form>
+		<fieldset>
+			<legend>login here</legend>
+			<table>
+				<tr>
+					<td><label>enter username</label></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td><label>enter password</label></td>
+					<td><input type="password" name=""></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2"><input type="submit" id="a"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>

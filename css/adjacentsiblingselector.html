@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>adjacent sibling selector</title>
+	<style>
+		/*footer>h2+h3
+		{
+			color:pink;
+		}
+		h2+h3
+		{
+			color: red;
+		}
+	   */
+	   
+	   	div+footer
+	   {
+	   	color:yellow;
+	   }
+	   h1+h2+h3
+	   {
+	   	color:green;
+	   }
+	</style>
+</head>
+<body>
+<header>
+	<h1>one</h1>
+	<h2>two</h2>
+	<h3>three</h3>
+</header>
+<div>
+	<h1>one</h1>
+	<h2>two</h2>
+
+</div>
+<footer>
+	<h1>one</h1>
+	<h2>two</h2>
+	<h3>three</h3>
+
+</footer>
+</body>
+</html>

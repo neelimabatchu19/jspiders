@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook page</title>
+	<style>
+		body
+		{
+			margin:0px;
+		}
+		#main-nav
+		{
+			background-color:blue;
+			height:100px;
+			display:flex;
+			justify-content: space-between;
+			
+			align-items:center;
+		}
+		#main-nav h1
+		{
+			color:white;
+			font-size:50px;
+			margin:0px;
+		}
+		#sub-nav
+		{
+			display:flex;
+			align-items:flex-end;
+			justify-content: flex-center;
+		}
+		label
+        {
+        	color:white;
+        }
+        @media (min-width:500px) and (max-width: 700px)
+        {
+        	#main-nav
+        	{
+        		flex-direction: column;
+        	}
+        	#sub-nav
+        	{
+        		margin-top:2px;
+        		margin-bottom:56px;
+        	}
+        }
+	    
+	    section article 
+		{
+				
+		    width:500px;
+		    display:inline-block;
+		    
+		    padding:10px;
+		    margin:20px 30px;
+
+		}
+		article img
+		{
+			width:500px;
+			height:410px;
+
+		}
+		button
+		{
+			background-color:green;
+			color:white;
+			width:80px;
+			border:none;
+			outline:none;
+			padding:10px;
+			border-radius:10px;
+		}
+		button:hover
+		{
+			background-color:red;
+			box-shadow:0 0 10px black;
+		}
+		section article  #a
+		{
+		    width:500px;
+		    display:inline-block;
+		    padding:10px;
+		    margin:20px 30px;
+
+		}
+		input[type="email"],input[type="password"]
+		{
+			width:335px;
+		}
+	</style>
+</head>
+<body>
+<nav id="main-nav"><h1>@facebook</h1>
+	<table id="sub-nav">
+       <tr>
+    	    <td><label>Uername:</label></td>
+    	    <td><input type="text"></td>
+    	    <td><label>Password:</label></td>
+    	    <td><input type="password"></td>
+    	    <td><button>login</button></td>
+        </tr>
+    </table>
+</nav>
+<section>
+	<article>
+		<img src="https://miro.medium.com/max/400/0*Vvyr1ZerRbDcbikD.png">
+	</article>
+	<article id="a">
+		<h1>Create a new account</h1>
+		<h2>its quick and easy</h2>
+		<input type="text" placeholder="First name">
+		<input type="text" placeholder="surname"><br>
+		<input type="email" placeholder="email address or mobilenumer"><br>
+		<input type="password" placeholder="New password"><br>
+		<label style="color:black;">Date of birth</label><br>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select>
+			<option>1999</option>
+			<option>2000</option>
+			<option>1998</option>
+			<option>1997</option>
+		</select>
+	</article>
+</section>
+</body>
+</html>

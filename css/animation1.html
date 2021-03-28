@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation1</title>
+	<style>
+		div
+		{
+			background:linear-gradient(45deg,orange,blue,green);
+			width:100px;
+			height:80px;
+			position:relative;
+			animation:move 2s linear 0s infinite alternate-reverse;
+		}
+		@keyframes move
+        {
+        	0%
+        	{
+        		top:0px;
+        		left:0px;
+        		border-radius:0px;
+        	}
+        	50%
+        	{
+        		top:0px;
+        		left:150px;
+        		border-radius:60px 0px 0px 0px;
+        	}
+        	75%
+        	{
+        		top:150px;
+        		left:0px;
+        		border-radius:0px 10px 60px 0px;
+        	}
+        	100%
+        	{
+        		top:0px;
+        		left:0px;
+        		border-radius:60px;
+        	}
+        	
+        }
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

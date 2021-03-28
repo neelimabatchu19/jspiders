@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css transforms</title>
+	<style type="text/css">
+		div 
+		{
+			box-shadow: 0 0 10px blue;
+		    width: 350px;
+		    height: 450px;
+		    border-radius: 20px;
+		    margin: 100px auto;
+			position: relative;
+		    
+		}
+		div img
+		{
+			transition: all 2s linear 0s;
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			filter: grayscale(100%);
+			transition: all 2s;
+		}
+		div:hover img
+		{
+			transform: scale(1.2,1.2);
+			filter: grayscale(0%);
+			transform: translateY(-50%);
+		}			
+		div #wrapper
+		{
+			background-color: rgba(0,0,0,0.5);
+			height: 241px;
+			transition: all 2s;
+			transform: translateY(80%);
+			transform: translateY(100%);
+		}
+		div:hover #wrapper
+		{
+			position: absolute;
+		    transform: perspective(100px) translateZ(0px);
+		    bottom: 0px;
+		    transform:translateY(50%);
+		}
+		div #wrapper .text
+		{
+			color: black;
+			padding: 50px;
+			font-size: 20px;
+			font-family: 'comic sans ms',sans-serif;
+		}
+	</style>
+</head>
+<body>
+ <div>
+ 	<img src="https://lh3.googleusercontent.com/proxy/w5mpYHuYssCo4MGT48omXL0lmUKRrtEjhNn6cx4sCvjM5upQk_2kpztcn7qERnMqyWB-0CRsRu4n9-EhIX6Z9dN_FQMbLvE" width="350" height="450">
+ 	<div id="wrapper"><p class="text">Price:300 <br>Author:Yashwanth Kanetkar <br>Edition:15 </p></div>
+ </div>
+</body>
+</html>

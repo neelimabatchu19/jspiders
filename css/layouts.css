@@ -1,0 +1,84 @@
+body
+{
+ 	margin:0px;
+}
+header,footer
+{
+	background:linear-gradient(45deg,orange,green,blue);
+	padding:20px;
+	margin:none;
+}
+header h1
+{
+    font-size:40px;
+    text-align:right;
+    color:white;
+}
+nav
+{
+	background:linear-gradient(45deg,blue,green,orange);
+	padding:10px;
+}
+nav a
+{
+	text-decoration:none;
+	color:white;
+	margin:20px 50px;
+	font-size:25px;
+}
+.fa
+{
+	padding:10px;
+}
+aside
+{
+	background:linear-gradient(45deg,cyan,coral,limegreen);
+	height:600px;
+	width:200px;
+	float:left;
+	position:sticky;
+	top:0px;
+}
+aside a
+{
+    text-transform:uppercase;
+	text-decoration:none;
+	display:block;
+	text-align:center;
+	margin-bottom:30px;
+	color:white;
+}
+aside a:hover
+{
+	background:linear-gradient(45deg,coral,red,blue);
+	color:white;
+	border-radius:20px;
+	box-shadow:0 0 10px blue;
+}
+section
+{
+	background:linear-gradient(45deg,blue,orange,green);
+	color:white;
+	margin-left:200px;
+}
+section article h2
+{
+	margin:0px;
+}
+section article
+{
+	background:linear-gradient(45deg,darkslategray,violet,green);
+	padding:20px;
+	margin:5px;
+	border-radius:20px;
+}
+section article p
+{
+	padding:5px;
+}
+footer
+{
+	margin-left:200px;
+	text-align: center;
+	color:white;
+}
